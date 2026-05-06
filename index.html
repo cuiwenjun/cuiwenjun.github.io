@@ -1,27 +1,195 @@
-<!doctype html><html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
-<title>Jar File Opener - Open, View and Extract JAR Files on Android</title><meta name="description" content="Open, view, inspect, extract, and analyze JAR files on Android. View MANIFEST.MF, browse contents, inspect CLASS files, and decompile supported class files."><style>
-:root{--p:#2563eb;--pd:#1d4ed8;--bg:#f7fbff;--card:#fff;--text:#111827;--muted:#6b7280;--border:#dbeafe;--soft:#eff6ff}
-*{box-sizing:border-box}body{margin:0;font-family:Arial,Helvetica,sans-serif;background:var(--bg);color:var(--text);line-height:1.7}
-header{background:radial-gradient(circle at top left,rgba(6,182,212,.28),transparent 35%),linear-gradient(135deg,#0f172a,#1d4ed8 55%,#06b6d4);color:#fff;padding:60px 20px;text-align:center}
-header h1{margin:0 auto 16px;max-width:1000px;font-size:44px;line-height:1.15}header p{margin:0 auto;max-width:860px;font-size:18px;opacity:.95}
-.hero-actions{margin-top:28px;display:flex;justify-content:center;gap:12px;flex-wrap:wrap}.button{display:inline-block;padding:13px 22px;border-radius:999px;background:#fff;color:var(--pd);text-decoration:none;font-weight:800;box-shadow:0 12px 28px rgba(0,0,0,.18)}
-.button.secondary{background:rgba(255,255,255,.14);color:#fff;border:1px solid rgba(255,255,255,.42);box-shadow:none}
-nav{background:#fff;border-bottom:1px solid var(--border);position:sticky;top:0;z-index:10}.nav-inner{max-width:1080px;margin:0 auto;padding:12px 18px;display:flex;gap:10px;flex-wrap:wrap}
-.nav-inner a{color:var(--pd);text-decoration:none;font-weight:800;padding:7px 11px;border-radius:999px}.nav-inner a:hover{background:var(--soft)}.nav-inner a.active{background:var(--p);color:#fff;box-shadow:0 6px 16px rgba(37,99,235,.24)}
-main{max-width:1080px;margin:0 auto;padding:32px 18px 70px}section{background:var(--card);border:1px solid var(--border);border-radius:20px;padding:30px;margin-bottom:24px;box-shadow:0 10px 28px rgba(37,99,235,.06)}
-h2{margin-top:0;color:var(--pd);font-size:28px}h3{margin-top:24px;color:#0f172a;font-size:21px}p{margin:12px 0}ul,ol{padding-left:24px}li{margin:6px 0}
-code{background:#f3f4f6;border:1px solid #e5e7eb;border-radius:7px;padding:2px 6px;font-family:Consolas,Monaco,monospace}
-.grid{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:14px}.card{background:linear-gradient(180deg,#eff6ff,#fff);border:1px solid var(--border);border-radius:16px;padding:16px;text-decoration:none;color:var(--text)}.card strong{display:block;color:var(--pd);font-size:18px;margin-bottom:6px}
-.badge{display:inline-block;background:#e0f2fe;color:#075985;border:1px solid #bae6fd;border-radius:999px;padding:6px 10px;font-weight:800;font-size:14px;margin:4px}
-.note{background:#fff7ed;border:1px solid #fed7aa;border-radius:16px;padding:15px 17px}table{width:100%;border-collapse:collapse;margin-top:14px}th,td{border:1px solid var(--border);padding:12px;text-align:left}th{background:var(--soft);color:var(--pd)}
-.download{text-align:center;background:linear-gradient(135deg,#eff6ff,#fff)}.download a{display:inline-block;margin-top:12px;padding:14px 26px;border-radius:14px;background:var(--p);color:#fff;text-decoration:none;font-weight:900}
-footer{text-align:center;padding:30px 18px;color:var(--muted);border-top:1px solid var(--border);background:#fff}@media(max-width:760px){header h1{font-size:34px}header p{font-size:16px}section{padding:22px}.grid{grid-template-columns:1fr}h2{font-size:24px}}
-</style></head><body>
-<header><h1>Open, View and Extract JAR Files on Android</h1><p>Jar File Opener is a lightweight Android tool for opening JAR files, browsing archive contents, viewing MANIFEST.MF, inspecting CLASS files, and extracting supported files.</p><div class="hero-actions"><a class="button" href="https://play.google.com/store/apps/details?id=com.coobbi.jarfileopener">Download on Google Play</a><a class="button secondary" href="https://play.google.com/store/apps/details?id=com.coobbi.jre">Run JARs with Jre4Android</a></div></header>
-<nav><div class="nav-inner"><a href="index.html">Overview</a><a href="open-jar-files-on-android.html">Open JAR</a><a href="view-manifest-mf.html">Manifest</a><a href="decompile-class-files.html">Class Decompiler</a><a href="extract-jar-files.html">Extract JAR</a></div></nav><main>
-<section><h2>What is Jar File Opener?</h2><p>Jar File Opener helps Android users open and inspect <code>.jar</code> files directly on their phone. You can browse file contents, view archive details, read <code>META-INF/MANIFEST.MF</code>, inspect <code>.class</code> entries, and extract files when needed.</p><p><span class="badge">JAR Opener</span><span class="badge">Manifest Viewer</span><span class="badge">CLASS Viewer</span><span class="badge">JAR Extractor</span></p></section>
-<section><h2>Key Features</h2><div class="grid"><div class="card"><strong>Open JAR files</strong>Browse Java archives directly on Android.</div><div class="card"><strong>View MANIFEST.MF</strong>Check Main-Class and Java archive metadata.</div><div class="card"><strong>Inspect CLASS files</strong>Use Hex view or decompile supported class files.</div><div class="card"><strong>Extract files</strong>Save resources, text files, images, and folders.</div></div></section>
-<section><h2>SEO Tutorial Pages</h2><div class="grid"><a class="card" href="open-jar-files-on-android.html"><strong>How to Open JAR Files on Android</strong>Step-by-step guide for opening and viewing JAR files.</a><a class="card" href="view-manifest-mf.html"><strong>How to View MANIFEST.MF</strong>Find Main-Class and other manifest metadata.</a><a class="card" href="decompile-class-files.html"><strong>How to Decompile CLASS Files</strong>View and decompile supported Java bytecode.</a><a class="card" href="extract-jar-files.html"><strong>How to Extract JAR Files</strong>Extract resources and files from Java archives.</a></div></section>
-<section><h2>Want to Run a JAR File?</h2><p>Jar File Opener is designed for viewing and extracting JAR files. If you want to run Java JAR files on Android, try Jre4Android.</p><p><a href="https://play.google.com/store/apps/details?id=com.coobbi.jre">Download Jre4Android on Google Play</a></p></section>
-<section class="download"><h2>Download Jar File Opener</h2><p>Open, view, inspect, and extract JAR files on Android.</p><a href="https://play.google.com/store/apps/details?id=com.coobbi.jarfileopener">Download on Google Play</a></section>
-</main><footer>© Coobbi. Jar File Opener is an independent utility app for Android.</footer><script>(function(){var c=location.pathname.split('/').pop()||'index.html';document.querySelectorAll('.nav-inner a').forEach(function(a){if(a.getAttribute('href')===c){a.classList.add('active');a.setAttribute('aria-current','page')}})})();</script></body></html>
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Jar File Opener Online - View, Extract and Inspect JAR Files</title>
+  <meta name="description" content="Open JAR files online in your browser. View MANIFEST.MF, browse JAR contents, preview files, extract resources and inspect CLASS files locally without upload." />
+  <link rel="canonical" href="https://jarfileopener.com/" />
+  <link rel="stylesheet" href="assets/style.css" />
+  <link rel="icon" href="assets/favicon.svg" type="image/svg+xml" />
+</head>
+<body>
+<header class="topbar">
+  <a class="brand" href="index.html">
+    <span class="brand-icon">JAR</span>
+    <span>
+      <strong>Jar File Opener</strong>
+      <small>Online JAR Viewer & Extractor</small>
+    </span>
+  </a>
+  <nav class="nav"><a class="active" href="index.html">Home</a>
+<a class="" href="index.html#tool">Online Tool</a>
+<a class="" href="open-jar-files-on-android/index.html">Open JAR</a>
+<a class="" href="view-manifest-mf/index.html">MANIFEST.MF</a>
+<a class="" href="decompile-class-files/index.html">Decompile CLASS</a>
+<a class="" href="extract-jar-files/index.html">Extract JAR</a></nav>
+  <a class="download-small" href="https://play.google.com/store/apps/details?id=com.coobbi.jarfileopener">Download Android App</a>
+</header>
+<main>
+  <section class="hero">
+    <div class="hero-copy">
+      <p class="eyebrow">100% local browser tool</p>
+      <h1>Open and explore <span>JAR files</span> online</h1>
+      <p class="lead">View MANIFEST.MF, browse contents, preview files, inspect CLASS files, and extract resources — all in your browser.</p>
+      <div class="trust">
+        <span>✓ No upload</span>
+        <span>✓ Free to use</span>
+        <span>✓ Works in browser</span>
+      </div>
+    </div>
+
+    <div id="tool" class="upload-panel">
+      <div id="dropZone" class="drop-zone">
+        <div class="jar-badge">JAR</div>
+        <h2>Drag & drop your JAR file here</h2>
+        <p>or</p>
+        <label class="primary-btn">
+          Choose JAR File
+          <input id="fileInput" type="file" accept=".jar,.zip" hidden />
+        </label>
+        <small>Your file is processed locally. Nothing is uploaded.</small>
+      </div>
+    </div>
+
+    <aside id="android" class="android-card">
+      <div class="android-head">
+        <h2>Jar File Opener for Android</h2>
+        <span class="android-icon">🤖</span>
+      </div>
+      <p>Open JAR files on your Android device, extract files, inspect CLASS files and decompile CLASS files to Java.</p>
+      <ul>
+        <li>Decompile .class to Java</li>
+        <li>Works offline</li>
+        <li>Advanced file inspection</li>
+        <li>Easy Android file access</li>
+      </ul>
+      <a class="primary-btn full" href="https://play.google.com/store/apps/details?id=com.coobbi.jarfileopener">Download on Google Play</a>
+    </aside>
+  </section>
+
+  <section id="workspace" class="workspace hidden">
+    <aside class="info-card">
+      <h2>JAR Information</h2>
+      <dl>
+        <dt>File name</dt><dd id="infoName">-</dd>
+        <dt>File size</dt><dd id="infoSize">-</dd>
+        <dt>Total entries</dt><dd id="infoEntries">-</dd>
+        <dt>Has manifest</dt><dd id="infoManifest">-</dd>
+        <dt>Main-Class</dt><dd id="infoMainClass">-</dd>
+        <dt>Created-By</dt><dd id="infoCreatedBy">-</dd>
+      </dl>
+
+      <h3>Quick Actions</h3>
+      <button id="viewManifestBtn" class="outline-btn">View MANIFEST.MF</button>
+      <button id="extractAllBtn" class="outline-btn">Extract All Files</button>
+      <button id="downloadJarBtn" class="outline-btn">Download JAR File</button>
+    </aside>
+
+    <section class="browser-card">
+      <div class="panel-head">
+        <h2>File Browser</h2>
+        <input id="searchInput" class="search" placeholder="Search files..." />
+      </div>
+      <div id="fileTree" class="file-tree"></div>
+      <p id="selectedStatus" class="selected-status">Select a file to preview.</p>
+    </section>
+
+    <section class="preview-card">
+      <div class="tabs">
+        <button class="tab active" data-tab="preview">Preview</button>
+        <button class="tab" data-tab="hex">Hex View</button>
+      </div>
+
+      <div id="previewPane" class="preview-pane">
+        <h2>No file selected</h2>
+        <p>Select a file from the browser to preview it here.</p>
+      </div>
+
+      <div id="hexPane" class="preview-pane hidden">
+        <pre id="hexOutput"></pre>
+      </div>
+    </section>
+  </section>
+
+  <section class="feature-grid">
+    <article><div class="feature-icon">🛡️</div><h3>100% Private</h3><p>Your JAR files are processed locally in your browser. We never upload or store your files.</p></article>
+    <article><div class="feature-icon">📄</div><h3>MANIFEST.MF Viewer</h3><p>Quickly check Main-Class, Created-By, Manifest-Version and other manifest metadata.</p></article>
+    <article><div class="feature-icon">📦</div><h3>Browse & Extract</h3><p>Explore folders, preview supported files and download selected files from the JAR archive.</p></article>
+    <article><div class="feature-icon">☕</div><h3>CLASS File Support</h3><p>Inspect CLASS files with Hex view. Use the Android app for CLASS decompilation to Java.</p></article>
+  </section>
+
+  <section class="seo-section">
+    <article class="content-card">
+      <h2>Online JAR File Opener</h2>
+      <p>Jar File Opener Online helps you open JAR files directly in your browser. A JAR file is a Java archive, usually a ZIP-based package that may contain Java CLASS files, resources, images, configuration files, and a metadata file called <strong>MANIFEST.MF</strong>.</p>
+      <p>This web tool is designed for quick inspection. You can select a local JAR file, browse its internal folders, view supported text files, inspect binary files in Hex view, and extract files without uploading anything to a server.</p>
+
+      <h3>How to open a JAR file online</h3>
+      <ol>
+        <li>Click <strong>Choose JAR File</strong> or drag a JAR file into the upload box.</li>
+        <li>The tool reads the archive locally in your browser.</li>
+        <li>Use the file browser to open <strong>META-INF/MANIFEST.MF</strong>, CLASS files, text files, and resources.</li>
+        <li>Download selected files or export the archive contents.</li>
+      </ol>
+
+      <h3>What can this tool inspect?</h3>
+      <ul>
+        <li>JAR file name, size, total entries, and manifest status</li>
+        <li>MANIFEST.MF fields such as Main-Class and Created-By</li>
+        <li>Folder structure and archive contents</li>
+        <li>Text files such as XML, JSON, properties, MF, Java, and TXT files</li>
+        <li>CLASS files through Hex view</li>
+      </ul>
+
+      <h3>Can it decompile CLASS files?</h3>
+      <p>The first web version focuses on safe local viewing and extraction. It can detect CLASS files and show Hex view. For CLASS decompilation to Java source code, use the Android version of Jar File Opener, which provides stronger offline file inspection features on your device.</p>
+
+      <div class="callout">
+        <strong>Need JAR tools on Android?</strong>
+        <p>Download Jar File Opener for Android to inspect JAR files on your phone, view CLASS files, and decompile supported CLASS files to Java.</p>
+        <a class="primary-btn" href="https://play.google.com/store/apps/details?id=com.coobbi.jarfileopener">Download Android App</a>
+      </div>
+    </article>
+
+    <aside class="toc">
+      <h3>On this page</h3>
+      <a href="#tool">Open JAR Online</a>
+      <a href="open-jar-files-on-android/index.html">Open JAR on Android</a>
+      <a href="view-manifest-mf/index.html">View MANIFEST.MF</a>
+      <a href="decompile-class-files/index.html">Decompile CLASS Files</a>
+      <a href="extract-jar-files/index.html">Extract JAR Files</a>
+    </aside>
+  </section>
+
+  <section class="tutorial-grid">
+    <a class="tutorial-card" href="open-jar-files-on-android/index.html"><strong>How to Open JAR Files on Android</strong><span>Use the Android app to inspect JAR archives on your phone.</span></a>
+    <a class="tutorial-card" href="view-manifest-mf/index.html"><strong>How to View MANIFEST.MF</strong><span>Check Main-Class, Created-By, and JAR metadata.</span></a>
+    <a class="tutorial-card" href="decompile-class-files/index.html"><strong>How to Decompile CLASS Files</strong><span>Understand CLASS decompilation and safe usage.</span></a>
+    <a class="tutorial-card" href="extract-jar-files/index.html"><strong>How to Extract JAR Files</strong><span>Extract resources, text files, and archive contents.</span></a>
+  </section>
+
+  <section class="notice">
+    <h2>Important Notice</h2>
+    <p>This tool is designed for opening and inspecting JAR files you own or have permission to access. Please respect software licenses, copyrights and developer terms. Online decompilation is not included in this web version.</p>
+  </section>
+
+  <section class="faq">
+    <h2>FAQ</h2>
+    <details><summary>Are my JAR files uploaded?</summary><p>No. This tool uses browser JavaScript to read your JAR file locally. Your file does not leave your device.</p></details>
+    <details><summary>Can this website decompile CLASS files to Java?</summary><p>The first web version supports CLASS file detection and Hex view. For CLASS decompilation to Java, download the Android app.</p></details>
+    <details><summary>Can I open JAR files on Android?</summary><p>Yes. Use the Jar File Opener Android app from Google Play for a better mobile experience.</p></details>
+  </section>
+</main>
+<footer class="footer">
+  <p>© Coobbi. Jar File Opener Online.</p>
+  <p>
+    <a href="https://play.google.com/store/apps/details?id=com.coobbi.jarfileopener">Android App</a>
+    <a href="https://coobbi.com">Coobbi Tools</a>
+    <a href="sitemap.xml">Sitemap</a>
+  </p>
+</footer>
+<script src="https://cdn.jsdelivr.net/npm/jszip@3.10.1/dist/jszip.min.js"></script>
+<script src="assets/app.js"></script>
+</body>
+</html>
