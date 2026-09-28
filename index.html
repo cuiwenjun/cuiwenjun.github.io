@@ -6,6 +6,14 @@
   <title>Jar File Opener Online - View, Extract and Inspect JAR Files</title>
   <meta name="description" content="Open JAR files online in your browser. View MANIFEST.MF, browse JAR contents, preview files, extract resources and inspect CLASS files locally without upload." />
   <link rel="canonical" href="https://jarfileopener.com/" />
+  <meta property="og:type" content="website" />
+  <meta property="og:site_name" content="Jar File Opener" />
+  <meta property="og:title" content="Jar File Opener Online - View, Extract and Inspect JAR Files" />
+  <meta property="og:description" content="Open JAR files online in your browser. Browse contents, inspect MANIFEST.MF, preview files, and extract resources locally without upload." />
+  <meta property="og:url" content="https://jarfileopener.com/" />
+  <meta name="twitter:card" content="summary" />
+  <meta name="twitter:title" content="Jar File Opener Online - View, Extract and Inspect JAR Files" />
+  <meta name="twitter:description" content="Open JAR files online in your browser. Browse contents, inspect MANIFEST.MF, and extract files locally without upload." />
   <link rel="stylesheet" href="assets/style.css" />
   <link rel="icon" href="assets/favicon.svg" type="image/svg+xml" />
 </head>
@@ -30,8 +38,8 @@
   <section class="hero">
     <div class="hero-copy">
       <p class="eyebrow">100% local browser tool</p>
-      <h1>Open and explore <span>JAR files</span> online</h1>
-      <p class="lead">View MANIFEST.MF, browse contents, preview files, inspect CLASS files, and extract resources — all in your browser.</p>
+      <h1>Online <span>JAR Viewer</span> &amp; File Opener</h1>
+      <p class="lead">Open and inspect JAR files directly in your browser. Browse archive contents, inspect MANIFEST.MF, view classes and resources, and extract files without uploading your JAR.</p>
       <div class="trust">
         <span>✓ No upload</span>
         <span>✓ Free to use</span>
@@ -45,7 +53,7 @@
         <h2>Drag & drop your JAR file here</h2>
         <p>or</p>
         <label class="primary-btn">
-          Choose JAR File
+          Open &amp; Inspect JAR File
           <input id="fileInput" type="file" accept=".jar,.zip" hidden />
         </label>
         <small>Your file is processed locally. Nothing is uploaded.</small>
@@ -115,14 +123,14 @@
   <section class="feature-grid">
     <article><div class="feature-icon">🛡️</div><h3>100% Private</h3><p>Your JAR files are processed locally in your browser. We never upload or store your files.</p></article>
     <article><div class="feature-icon">📄</div><h3>MANIFEST.MF Viewer</h3><p>Quickly check Main-Class, Created-By, Manifest-Version and other manifest metadata.</p></article>
-    <article><div class="feature-icon">📦</div><h3>Browse & Extract</h3><p>Explore folders, preview supported files and download selected files from the JAR archive.</p></article>
+    <article><div class="feature-icon">📦</div><h3>JAR Viewer &amp; Extractor</h3><p>Explore folders, preview supported files, and download selected files or the full archive contents as a ZIP.</p></article>
     <article><div class="feature-icon">☕</div><h3>CLASS File Support</h3><p>Inspect CLASS files with Hex view. Use the Android app for CLASS decompilation to Java.</p></article>
   </section>
 
   <section class="seo-section">
     <article class="content-card">
-      <h2>Online JAR File Opener</h2>
-      <p>Jar File Opener Online helps you open JAR files directly in your browser. A JAR file is a Java archive, usually a ZIP-based package that may contain Java CLASS files, resources, images, configuration files, and a metadata file called <strong>MANIFEST.MF</strong>.</p>
+      <h2>Online JAR Viewer and File Opener</h2>
+      <p>Jar File Opener Online is a JAR viewer and JAR file reader that opens JAR files directly in your browser. A JAR file is a Java archive, usually a ZIP-based package that may contain Java CLASS files, resources, images, configuration files, and a metadata file called <strong>MANIFEST.MF</strong>.</p>
       <p>This web tool is designed for quick inspection. You can select a local JAR file, browse its internal folders, view supported text files, inspect binary files in Hex view, and extract files without uploading anything to a server.</p>
 
       <h3>How to open a JAR file online</h3>
@@ -142,6 +150,9 @@
         <li>CLASS files through Hex view</li>
       </ul>
 
+      <h3>Extract JAR files online</h3>
+      <p>Use this JAR extractor to browse archive entries, inspect the files you need, and download individual files or export the full archive contents as a ZIP. Processing stays in your browser, so your JAR file is not uploaded to our server. <a href="extract-jar-files/index.html">Learn how to extract JAR files</a>.</p>
+
       <h3>Can it decompile CLASS files?</h3>
       <p>The first web version focuses on safe local viewing and extraction. It can detect CLASS files and show Hex view. For CLASS decompilation to Java source code, use the Android version of Jar File Opener, which provides stronger offline file inspection features on your device.</p>
 
@@ -149,6 +160,7 @@
         <strong>Need JAR tools on Android?</strong>
         <p>Download Jar File Opener for Android to inspect JAR files on your phone, view CLASS files, and decompile supported CLASS files to Java.</p>
         <a class="primary-btn" href="https://play.google.com/store/apps/details?id=com.coobbi.jarfileopener">Download Android App</a>
+        <p>On iPhone, use <a href="https://apps.apple.com/app/id6792224147">JAR DLL EXE File Viewer</a> to inspect JAR archives, view manifest information, and export entries.</p>
       </div>
     </article>
 
@@ -178,6 +190,8 @@
     <h2>FAQ</h2>
     <details><summary>Are my JAR files uploaded?</summary><p>No. This tool uses browser JavaScript to read your JAR file locally. Your file does not leave your device.</p></details>
     <details><summary>Can this website decompile CLASS files to Java?</summary><p>The first web version supports CLASS file detection and Hex view. For CLASS decompilation to Java, download the Android app.</p></details>
+    <details><summary>Can I use this as a JAR file viewer or reader?</summary><p>Yes. Open a local JAR file to browse its folders and entries, read supported text files, inspect MANIFEST.MF, and preview CLASS files in Hex view.</p></details>
+    <details><summary>Can I extract a JAR file online?</summary><p>Yes. Browse the JAR contents and download individual entries, or use Extract All Files to export the archive contents as a ZIP. Your file stays in your browser.</p></details>
     <details><summary>Can I open JAR files on Android?</summary><p>Yes. Use the Jar File Opener Android app from Google Play for a better mobile experience.</p></details>
   </section>
 </main>
