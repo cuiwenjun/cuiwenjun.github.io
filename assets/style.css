@@ -100,7 +100,7 @@ main{max-width:1560px;margin:0 auto;padding:34px 28px 0}
 .lead{font-size:18px;color:#475569;max-width:520px}
 .trust{display:flex;flex-wrap:wrap;gap:14px;margin-top:28px}
 .trust span{font-weight:800;color:#0f5132;background:#ecfdf5;border:1px solid #bbf7d0;border-radius:999px;padding:7px 10px}
-.upload-panel,.android-card,.info-card,.browser-card,.preview-card,.feature-grid article,.notice,.faq,.content-card,.toc,.tutorial-card{
+.upload-panel,.mobile-app-card,.info-card,.browser-card,.preview-card,.feature-grid article,.notice,.faq,.content-card,.toc,.tutorial-card{
   background:var(--surface);
   border:1px solid var(--line);
   border-radius:18px;
@@ -151,11 +151,17 @@ main{max-width:1560px;margin:0 auto;padding:34px 28px 0}
   font-weight:900;
 }
 .primary-btn.full{display:block;text-align:center;margin-top:18px}
-.android-card{padding:24px}
-.android-head{display:flex;justify-content:space-between;gap:18px;align-items:flex-start}
-.android-card h2{margin:0;color:var(--blue2)}
-.android-icon{font-size:34px}
-.android-card ul{padding-left:18px;color:#334155}
+.mobile-app-card{padding:24px}
+#mobile-apps{scroll-margin-top:100px}
+.mobile-app-head{display:flex;justify-content:space-between;gap:18px;align-items:flex-start}
+.mobile-app-card h2{margin:0;color:var(--blue2)}
+.mobile-app-icon{font-size:34px}
+.mobile-platform h3{margin:3px 0 6px;font-size:18px}
+.mobile-platform p:not(.platform-label){margin:0;color:#475569}
+.platform-label{margin:20px 0 2px;color:var(--blue2);font-size:12px;font-weight:900;letter-spacing:.08em;text-transform:uppercase}
+.mobile-platform:first-of-type .platform-label{margin-top:18px}
+.mobile-divider{border:0;border-top:1px solid var(--line);margin:22px 0 0}
+.secondary-btn.full{display:block;text-align:center;margin-top:18px}
 .workspace{
   display:grid;
   grid-template-columns:280px minmax(380px,1fr) minmax(420px,1fr);
